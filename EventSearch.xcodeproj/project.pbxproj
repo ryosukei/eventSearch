@@ -3,19 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CCC4389AC4D1EA37A36D11F /* Pods_EventSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2E6BA8FD26F1A29799C009 /* Pods_EventSearch.framework */; };
 		BBC3734827278BC300401EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3734727278BC300401EBA /* AppDelegate.swift */; };
 		BBC3734A27278BC300401EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3734927278BC300401EBA /* SceneDelegate.swift */; };
 		BBC3734C27278BC300401EBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3734B27278BC300401EBA /* ViewController.swift */; };
 		BBC3734F27278BC300401EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC3734D27278BC300401EBA /* Main.storyboard */; };
 		BBC3735127278BCB00401EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC3735027278BCB00401EBA /* Assets.xcassets */; };
 		BBC3735427278BCB00401EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC3735227278BCB00401EBA /* LaunchScreen.storyboard */; };
+		BBC3735C2727921E00401EBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBC3735B2727921E00401EBA /* GoogleService-Info.plist */; };
+		BBC3735E2727991300401EBA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3735D2727991300401EBA /* LoginViewController.swift */; };
+		BBC37360272799BD00401EBA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3735F272799BD00401EBA /* HomeViewController.swift */; };
+		BBC3736227279AD400401EBA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3736127279AD400401EBA /* SearchViewController.swift */; };
+		BBC3736427279DB700401EBA /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3736327279DB700401EBA /* MypageViewController.swift */; };
+		BBC3736627279E0700401EBA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3736527279E0700401EBA /* TabBarController.swift */; };
+		BBC373682727D2E700401EBA /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC373672727D2E700401EBA /* EventData.swift */; };
+		BBC3736D2727D3F500401EBA /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3736B2727D3F500401EBA /* EventTableViewCell.swift */; };
+		BBC3736E2727D3F500401EBA /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC3736C2727D3F500401EBA /* EventTableViewCell.xib */; };
+		BBC373712727EFFD00401EBA /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3736F2727EFFD00401EBA /* SampleTableViewCell.swift */; };
+		BBC373722727EFFD00401EBA /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC373702727EFFD00401EBA /* SampleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B2E6BA8FD26F1A29799C009 /* Pods_EventSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EC79F4CFC29B78CD9A6AD0 /* Pods-EventSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearch.release.xcconfig"; path = "Target Support Files/Pods-EventSearch/Pods-EventSearch.release.xcconfig"; sourceTree = "<group>"; };
+		7B115BD5E76B87C222295DBD /* Pods-EventSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearch.debug.xcconfig"; path = "Target Support Files/Pods-EventSearch/Pods-EventSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		BBC3734427278BC300401EBA /* EventSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC3734727278BC300401EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBC3734927278BC300401EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +39,17 @@
 		BBC3735027278BCB00401EBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC3735327278BCB00401EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBC3735527278BCB00401EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC3735B2727921E00401EBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BBC3735D2727991300401EBA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BBC3735F272799BD00401EBA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BBC3736127279AD400401EBA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BBC3736327279DB700401EBA /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		BBC3736527279E0700401EBA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BBC373672727D2E700401EBA /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		BBC3736B2727D3F500401EBA /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		BBC3736C2727D3F500401EBA /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		BBC3736F2727EFFD00401EBA /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
+		BBC373702727EFFD00401EBA /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCC4389AC4D1EA37A36D11F /* Pods_EventSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		903570092AA5B5AD8E0326A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B115BD5E76B87C222295DBD /* Pods-EventSearch.debug.xcconfig */,
+				30EC79F4CFC29B78CD9A6AD0 /* Pods-EventSearch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		99991C460184F3BF00DF7AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B2E6BA8FD26F1A29799C009 /* Pods_EventSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BBC3733B27278BC300401EBA = {
 			isa = PBXGroup;
 			children = (
 				BBC3734627278BC300401EBA /* EventSearch */,
 				BBC3734527278BC300401EBA /* Products */,
+				903570092AA5B5AD8E0326A9 /* Pods */,
+				99991C460184F3BF00DF7AE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +105,20 @@
 				BBC3734727278BC300401EBA /* AppDelegate.swift */,
 				BBC3734927278BC300401EBA /* SceneDelegate.swift */,
 				BBC3734B27278BC300401EBA /* ViewController.swift */,
+				BBC3735D2727991300401EBA /* LoginViewController.swift */,
+				BBC3735F272799BD00401EBA /* HomeViewController.swift */,
+				BBC3736127279AD400401EBA /* SearchViewController.swift */,
+				BBC3736327279DB700401EBA /* MypageViewController.swift */,
+				BBC3736527279E0700401EBA /* TabBarController.swift */,
+				BBC373672727D2E700401EBA /* EventData.swift */,
+				BBC3736F2727EFFD00401EBA /* SampleTableViewCell.swift */,
+				BBC373702727EFFD00401EBA /* SampleTableViewCell.xib */,
+				BBC3736B2727D3F500401EBA /* EventTableViewCell.swift */,
+				BBC3736C2727D3F500401EBA /* EventTableViewCell.xib */,
 				BBC3734D27278BC300401EBA /* Main.storyboard */,
 				BBC3735027278BCB00401EBA /* Assets.xcassets */,
 				BBC3735227278BCB00401EBA /* LaunchScreen.storyboard */,
+				BBC3735B2727921E00401EBA /* GoogleService-Info.plist */,
 				BBC3735527278BCB00401EBA /* Info.plist */,
 			);
 			path = EventSearch;
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBC3735827278BCB00401EBA /* Build configuration list for PBXNativeTarget "EventSearch" */;
 			buildPhases = (
+				D72B26FEB29DF6289F86E6F1 /* [CP] Check Pods Manifest.lock */,
 				BBC3734027278BC300401EBA /* Sources */,
 				BBC3734127278BC300401EBA /* Frameworks */,
 				BBC3734227278BC300401EBA /* Resources */,
+				B2303F634F6CDBED5CBE7F77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,7 +183,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC3736E2727D3F500401EBA /* EventTableViewCell.xib in Resources */,
+				BBC373722727EFFD00401EBA /* SampleTableViewCell.xib in Resources */,
 				BBC3735427278BCB00401EBA /* LaunchScreen.storyboard in Resources */,
+				BBC3735C2727921E00401EBA /* GoogleService-Info.plist in Resources */,
 				BBC3735127278BCB00401EBA /* Assets.xcassets in Resources */,
 				BBC3734F27278BC300401EBA /* Main.storyboard in Resources */,
 			);
@@ -132,13 +194,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B2303F634F6CDBED5CBE7F77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventSearch/Pods-EventSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventSearch/Pods-EventSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventSearch/Pods-EventSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D72B26FEB29DF6289F86E6F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BBC3734027278BC300401EBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC373712727EFFD00401EBA /* SampleTableViewCell.swift in Sources */,
+				BBC3736227279AD400401EBA /* SearchViewController.swift in Sources */,
+				BBC3736627279E0700401EBA /* TabBarController.swift in Sources */,
+				BBC373682727D2E700401EBA /* EventData.swift in Sources */,
+				BBC37360272799BD00401EBA /* HomeViewController.swift in Sources */,
+				BBC3736427279DB700401EBA /* MypageViewController.swift in Sources */,
+				BBC3735E2727991300401EBA /* LoginViewController.swift in Sources */,
 				BBC3734C27278BC300401EBA /* ViewController.swift in Sources */,
 				BBC3734827278BC300401EBA /* AppDelegate.swift in Sources */,
+				BBC3736D2727D3F500401EBA /* EventTableViewCell.swift in Sources */,
 				BBC3734A27278BC300401EBA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +395,7 @@
 		};
 		BBC3735927278BCB00401EBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B115BD5E76B87C222295DBD /* Pods-EventSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +414,7 @@
 		};
 		BBC3735A27278BCB00401EBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30EC79F4CFC29B78CD9A6AD0 /* Pods-EventSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
