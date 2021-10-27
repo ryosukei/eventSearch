@@ -73,29 +73,35 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! EventTableViewCell
         cell.setEventData(eventArray[indexPath.row])
+        // セル内のボタンのアクションをソースコードで設定する
+        cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
         return cell
     }
     
-    // FAB
-    var startingFrame: CGRect!
-    var endingFrame: CGRect!
-    
-    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
-        if(scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size
-                                            .height) && self.floatingActionBtn.isHidden){
-            self.floatingActionBtn.isHidden = false
-            self.floatingActionBtn.frame = startingFrame
-            UIView.animate(withDuration: 1.0) {
-              self.floatingActionBtn.frame = self.endingFrame
-             }
+    @objc func handleButton(_ sender: UIButton,forEvent event: UIEvent){
+        print("DEBUG_PRINT: likeボタンがタップされました。")
+        // タップされたセルのインデックスを求める
+        let touch = event.allTouches?.first
+        let point = touch!.location(in: self.tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+        // 配列からタップされたインデックスのデータを取り出す
+        let eventData = eventArray[indexPath!.row]
+
+        // likesを更新する
+        if let myid = Auth.auth().currentUser?.uid {
+            // 更新データを作成する
+            var updateValue: FieldValue
+            if eventData.isLiked {
+                // すでにいいねをしている場合は、いいね解除のためmyidを取り除く更新データを作成
+                updateValue = FieldValue.arrayRemove([myid])
+            } else {
+                // 今回新たにいいねを押した場合は、myidを追加する更新データを作成
+                updateValue = FieldValue.arrayUnion([myid])
+            }
+            // likesに更新データを書き込む
+            let eventRef = Firestore.firestore().collection("events").document(eventData.id)
+            eventRef.updateData(["likes": updateValue])
         }
-    }
-    func configureSizes() {
-        let screenSize = UIScreen.main.bounds
-        let screenWidth = screenSize.width
-        let screenHeight = screenSize.height
-        startingFrame = CGRect(x: 0, y: screenHeight+100, width: screenWidth, height: 100)
-        endingFrame = CGRect(x: 0, y: screenHeight-100, width: screenWidth, height: 100)
     }
 
     /*

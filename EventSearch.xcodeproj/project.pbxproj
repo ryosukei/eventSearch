@@ -17,7 +17,7 @@
 		BBC3735C2727921E00401EBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBC3735B2727921E00401EBA /* GoogleService-Info.plist */; };
 		BBC3735E2727991300401EBA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3735D2727991300401EBA /* LoginViewController.swift */; };
 		BBC37360272799BD00401EBA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3735F272799BD00401EBA /* HomeViewController.swift */; };
-		BBC3736227279AD400401EBA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3736127279AD400401EBA /* SearchViewController.swift */; };
+		BBC3736227279AD400401EBA /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3736127279AD400401EBA /* PostViewController.swift */; };
 		BBC3736427279DB700401EBA /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3736327279DB700401EBA /* MypageViewController.swift */; };
 		BBC3736627279E0700401EBA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3736527279E0700401EBA /* TabBarController.swift */; };
 		BBC373682727D2E700401EBA /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC373672727D2E700401EBA /* EventData.swift */; };
@@ -42,7 +42,7 @@
 		BBC3735B2727921E00401EBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BBC3735D2727991300401EBA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BBC3735F272799BD00401EBA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		BBC3736127279AD400401EBA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BBC3736127279AD400401EBA /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		BBC3736327279DB700401EBA /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		BBC3736527279E0700401EBA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BBC373672727D2E700401EBA /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				BBC3734B27278BC300401EBA /* ViewController.swift */,
 				BBC3735D2727991300401EBA /* LoginViewController.swift */,
 				BBC3735F272799BD00401EBA /* HomeViewController.swift */,
-				BBC3736127279AD400401EBA /* SearchViewController.swift */,
+				BBC3736127279AD400401EBA /* PostViewController.swift */,
 				BBC3736327279DB700401EBA /* MypageViewController.swift */,
 				BBC3736527279E0700401EBA /* TabBarController.swift */,
 				BBC373672727D2E700401EBA /* EventData.swift */,
@@ -242,7 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBC373712727EFFD00401EBA /* SampleTableViewCell.swift in Sources */,
-				BBC3736227279AD400401EBA /* SearchViewController.swift in Sources */,
+				BBC3736227279AD400401EBA /* PostViewController.swift in Sources */,
 				BBC3736627279E0700401EBA /* TabBarController.swift in Sources */,
 				BBC373682727D2E700401EBA /* EventData.swift in Sources */,
 				BBC37360272799BD00401EBA /* HomeViewController.swift in Sources */,
